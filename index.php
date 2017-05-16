@@ -1,9 +1,12 @@
 <?php
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+require_once 'src/translate.php';
+
+if (!isset($_SESSION['language'])) {
+    $language = "pl";
+} else if ($_SESSION['language'] === "en" || $_SESSION['language'] === "esperanto"
+        || $_SESSION['language'] === "pl" || $_SESSION['language'] === "fr") {
+    $language = $_SESSION['language'];
+}
 ?>
 
 <!DOCTYPE HTML>
@@ -21,7 +24,7 @@
     </head>
     <body>
         
-        Test.
+        <?=$textTranslate[$language]["contact"]?>
 
     </body>
 </html>
