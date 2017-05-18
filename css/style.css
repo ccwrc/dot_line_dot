@@ -1,6 +1,11 @@
-html, body {
+#divContainer {
     font-family: 'DejaVu Serif', 'Liberation Serif';  
     margin:0;
     padding:0;
     height:100%;
+}
+
+.ulMenu li {
+    list-style-type: none;
+    display: inline;
 }

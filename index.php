@@ -28,7 +28,12 @@ if (!isset($_SESSION['language'])) {
         <div id="divContainer">
             
             <div id="divMenu">
-                menu
+                <ul class="ulMenu">
+                    <li>Polski</li>
+                    <li>English</li>
+                    <li>Français</li>
+                    <li>Esperanto</li>
+                </ul>
             </div>
             
             <div id="divContent">
@@ -36,7 +41,12 @@ if (!isset($_SESSION['language'])) {
             </div>
             
             <div id="divFooter">
-                footer
+                <ul class="ulMenu">
+                    <li>kontakt</li>
+                    <li>prawa</li>
+                    <li>wiki</li>
+                    <li>other</li>
+                </ul>
             </div>
             
         </div>
