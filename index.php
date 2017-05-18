@@ -3,6 +3,13 @@ session_start();
 
 require_once 'src/functions.php';
 
+$loadPage = "";
+
+if (isset($_GET['load_page']) && ($_GET['load_page'] === 'contact' 
+        || $_GET['load_page'] === 'main')) {
+    $loadPage = $_GET['load_page'];
+}
+
 if (!isset($_SESSION['language'])) {
     $language = "pl";
 } else if ($_SESSION['language'] === "en" || $_SESSION['language'] === "esperanto"
@@ -26,7 +33,7 @@ if (!isset($_SESSION['language'])) {
     </head>
     <body>    
         <div id="divContainer">
-            
+
             <div id="divMenu">
                 <ul class="ulMenu">
                     <li>Polski</li>
@@ -35,20 +42,29 @@ if (!isset($_SESSION['language'])) {
                     <li>Esperanto</li>
                 </ul>
             </div>
-            
-            <div id="divContent">
-                content
-            </div>
-            
+
+            <?php
+            switch ($loadPage) {
+                case "contact":
+                    include 'index_content/contact.php';
+                    break;
+                case "main":
+                    include 'index_content/main.php';
+                    break;
+                default :
+                    include 'index_content/main.php';
+            }
+            ?>
+
             <div id="divFooter">
                 <ul class="ulMenu">
-                    <li>kontakt</li>
-                    <li>prawa</li>
+                    <li><a href="index.php?load_page=contact">contact</a></li>
+                    <li><a href="index.php?load_page=main">main</a></li>
                     <li>wiki</li>
                     <li>other</li>
                 </ul>
             </div>
-            
+
         </div>
     </body>
 </html>

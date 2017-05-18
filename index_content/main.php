@@ -7,6 +7,6 @@
 ?>
 
 <div id="divContent">
-    content
+    content main
 </div>
 
