@@ -95,5 +95,3 @@ $morseCode = [
     "[starting signal]" => "-.-.-", 
     "[start of work (VVV)]" => "...-...-...-", 
 ];
-
-// check https://www.itu.int/dms_pubrec/itu-r/rec/m/R-REC-M.1677-1-200910-I!!PDF-E.pdf
