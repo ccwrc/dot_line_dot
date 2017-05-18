@@ -2,24 +2,28 @@
 
 $textTranslate = [
     "en" => [
-        "word1" => "word 1",
-        "word2" => "word 2",
+        "sources" => "sources",
+        "author" => "author",
         "contact" => "contact",
+        "translator" => "translator",
     ],
     "pl" => [
-        "word1" => "słowo 1",
-        "word2" => "słowo 2",
+        "sources" => "źródła",
+        "author" => "autor",
         "contact" => "kontakt",
+        "translator" => "tłumacz",
     ],
     "esperanto" => [
-        "word1" => "vorto 1",
-        "word2" => "vorto 2",
+        "sources" => "fonto",
+        "author" => "aŭtoro",
         "contact" => "kontakto",
+        "translator" => "tradukisto",
     ],
     "fr" => [
-        "word1" => "mot 1",
-        "word2" => "mot 2",
+        "sources" => "source",
+        "author" => "auteur",
         "contact" => "contact",
+        "translator" => "traducteur",
     ]
 ];
 
