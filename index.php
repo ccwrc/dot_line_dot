@@ -1,5 +1,7 @@
 <?php
-require_once 'src/translate.php';
+session_start();
+
+require_once 'src/functions.php';
 
 if (!isset($_SESSION['language'])) {
     $language = "pl";
@@ -22,10 +24,22 @@ if (!isset($_SESSION['language'])) {
 <!--        <script src="js/jquery-3.1.1.min.js"></script>
         <script src="js/app.js"></script>	-->
     </head>
-    <body>
-        
-        <?=$textTranslate[$language]["contact"]?>
-
+    <body>    
+        <div id="divContainer">
+            
+            <div id="divMenu">
+                menu
+            </div>
+            
+            <div id="divContent">
+                content
+            </div>
+            
+            <div id="divFooter">
+                footer
+            </div>
+            
+        </div>
     </body>
 </html>
 
