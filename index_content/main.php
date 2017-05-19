@@ -23,7 +23,7 @@
         <input type="submit" value="<?= $textTranslate[$language]['translate'] ?>"/>
     </form>
     <br/>
-    
+
     <?= $translatedText ?>
 
 </div>

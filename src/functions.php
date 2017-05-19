@@ -28,7 +28,8 @@ function translateHumanToMorseOld($stringToTranslate, array $morseCode) {
 // slow, but work fine. 
 function translateHumanToMorse($stringToTranslate, array $morseCode) {
 
-    if (!is_string($stringToTranslate) || !is_array($morseCode)) {
+    if (!is_string($stringToTranslate) || !is_array($morseCode) 
+            || strlen($stringToTranslate) > 10000) {
         return "";
     }
 
@@ -37,7 +38,7 @@ function translateHumanToMorse($stringToTranslate, array $morseCode) {
     $retString = "";
     foreach ($arrayString as $stringChar) { 
         foreach ($morseCode as $humanChar => $morseChar) {           
-            if ($stringChar === (string)$humanChar) {
+            if ($stringChar === (string)$humanChar) { // (string) for digits
                 $retString .= $morseChar;
                 $retString .= " &nbsp;";
             } else {
@@ -52,7 +53,8 @@ function translateHumanToMorse($stringToTranslate, array $morseCode) {
 
 function translateMorseToHuman($stringToTranslate, array $morseCode) {
 
-    if (!is_string($stringToTranslate) || !is_array($morseCode)) {
+    if (!is_string($stringToTranslate) || !is_array($morseCode) 
+            || strlen($stringToTranslate) > 10000) {
         return "";
     }
 
