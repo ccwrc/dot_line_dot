@@ -4,10 +4,25 @@ session_start();
 require_once 'src/functions.php';
 
 $loadPage = "";
+$translatedText = "";
+
+if ($_SERVER['REQUEST_METHOD'] === "POST") {
+    if (isset($_POST['toMorse'])) {
+        $translatedText = translateHumanToMorse($_POST['toMorse'], $morseCode);
+    } else if (isset($_POST['toText'])) {
+        $translatedText = translateMorseToHuman($_POST['toText'], $morseCode);
+    }
+}
 
 if (isset($_GET['load_page']) && ($_GET['load_page'] === 'contact' 
         || $_GET['load_page'] === 'main' || $_GET['load_page'] === 'sources')) {
     $loadPage = $_GET['load_page'];
+}
+
+if (isset($_GET['translate_to']) && ($_GET['translate_to'] === 'esperanto' 
+        || $_GET['translate_to'] === 'pl' || $_GET['translate_to'] === 'en' 
+        || $_GET['translate_to'] === 'fr')) {
+    $_SESSION['language'] = $_GET['translate_to'];
 }
 
 if (!isset($_SESSION['language'])) {
@@ -36,10 +51,10 @@ if (!isset($_SESSION['language'])) {
 
             <div id="divMenu">
                 <ul class="ulMenu">
-                    <li>Polski</li>
-                    <li>English</li>
-                    <li>Français</li>
-                    <li>Esperanto</li>
+                    <li><a href="index.php?translate_to=pl">Polski</a></li>
+                    <li><a href="index.php?translate_to=en">English</a></li>
+                    <li><a href="index.php?translate_to=fr">Français</a></li>
+                    <li><a href="index.php?translate_to=esperanto">Esperanto</a></li>
                 </ul>
             </div>
 

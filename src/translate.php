@@ -6,24 +6,36 @@ $textTranslate = [
         "author" => "author",
         "contact" => "contact",
         "translator" => "translator",
+        "translate" => "translate",
+        "orTranslateMorseCode" => "Or translate Morse code",
+        "enterTheTextToBeTranslatedIntoMorseCode" => "Enter the text to be translated into Morse code",
     ],
     "pl" => [
         "sources" => "źródła",
         "author" => "autor",
         "contact" => "kontakt",
         "translator" => "tłumacz",
+        "translate" => "przetłumacz",
+        "orTranslateMorseCode" => "Lub przetłumacz kod Morse'a",
+        "enterTheTextToBeTranslatedIntoMorseCode" => "Wprowadź tekst do tłumaczenia na kod Morse'a",
     ],
     "esperanto" => [
         "sources" => "fonto",
         "author" => "aŭtoro",
         "contact" => "kontakto",
         "translator" => "tradukisto",
+        "translate" => "traduki",
+        "orTranslateMorseCode" => "Aŭ traduki kodo Morse",
+        "enterTheTextToBeTranslatedIntoMorseCode" => "Enigu tekston traduki kodon Morsea",
     ],
     "fr" => [
         "sources" => "source",
         "author" => "auteur",
         "contact" => "contact",
         "translator" => "traducteur",
+        "translate" => "traduire",
+        "orTranslateMorseCode" => "Ou traduire le code Morse",
+        "enterTheTextToBeTranslatedIntoMorseCode" => "Entrez le texte à traduire le code Morsea",
     ]
 ];
 
