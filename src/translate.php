@@ -7,7 +7,7 @@ $textTranslate = [
         "contact" => "contact",
         "translator" => "translator",
         "translate" => "translate",
-        "orTranslateMorseCode" => "Or translate Morse code",
+        "orTranslateMorseCode" => "Or translate Morse code (-/./space)",
         "enterTheTextToBeTranslatedIntoMorseCode" => "Enter the text to be translated into Morse code",
     ],
     "pl" => [
@@ -16,7 +16,7 @@ $textTranslate = [
         "contact" => "kontakt",
         "translator" => "tłumacz",
         "translate" => "przetłumacz",
-        "orTranslateMorseCode" => "Lub przetłumacz kod Morse'a",
+        "orTranslateMorseCode" => "Lub przetłumacz kod Morse'a (-/./spacja)",
         "enterTheTextToBeTranslatedIntoMorseCode" => "Wprowadź tekst do tłumaczenia na kod Morse'a",
     ],
     "esperanto" => [
@@ -25,7 +25,7 @@ $textTranslate = [
         "contact" => "kontakto",
         "translator" => "tradukisto",
         "translate" => "traduki",
-        "orTranslateMorseCode" => "Aŭ traduki kodo Morse",
+        "orTranslateMorseCode" => "Aŭ traduki kodo Morse (-/./spaco)",
         "enterTheTextToBeTranslatedIntoMorseCode" => "Enigu tekston traduki kodon Morsea",
     ],
     "fr" => [
@@ -34,7 +34,7 @@ $textTranslate = [
         "contact" => "contact",
         "translator" => "traducteur",
         "translate" => "traduire",
-        "orTranslateMorseCode" => "Ou traduire le code Morse",
+        "orTranslateMorseCode" => "Ou traduire le code Morse (-/./espace)",
         "enterTheTextToBeTranslatedIntoMorseCode" => "Entrez le texte à traduire le code Morsea",
     ]
 ];

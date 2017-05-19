@@ -1,10 +1,3 @@
-<?php
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-?>
 
 <div id="divContent">
 
@@ -12,7 +5,7 @@
 
     <form action="#" method="POST">
         <input type="text" name="toMorse" size="100"
-               pattern=".{1,10000}" required title="min. 1, max. 10000"/> <br/>
+               pattern=".{1,9500}" required title="min. 1, max. 9500"/> <br/>
         <input type="submit" value="<?= $textTranslate[$language]['translate'] ?>"/>
     </form>
 

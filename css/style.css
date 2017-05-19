@@ -18,9 +18,15 @@ body {
     text-align: center;
 }
 
+#divContent {
+    
+}
+
 #divFooter {
     bottom: 0;
     margin: 5px;
     text-align: center;
 }
+
+
 
