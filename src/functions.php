@@ -3,33 +3,33 @@
 require_once 'translate.php';
 
 // not working correctly with multibyte string !
-function translateHumanToMorseOld($stringToTranslate, array $morseCode) {
-
-    if (!is_string($stringToTranslate) || !is_array($morseCode)) {
-        return "";
-    }
-
-    $lowerStringToTranslate = trim(strtolower($stringToTranslate));
-    $retString = "";
-    for ($i = 0; $i <= strlen($lowerStringToTranslate) - 1; $i++) {
-        foreach ($morseCode as $humanChar => $morseChar) {
-            if ($lowerStringToTranslate[$i] === $humanChar) {
-                $retString .= $morseChar;
-                $retString .= " ";
-            } else {
-                $retString .= " ";
-            }
-        }
-    }
-
-    return $retString;
-}
+//function translateHumanToMorseOld($stringToTranslate, array $morseCode) {
+//
+//    if (!is_string($stringToTranslate) || !is_array($morseCode)) {
+//        return "";
+//    }
+//
+//    $lowerStringToTranslate = trim(strtolower($stringToTranslate));
+//    $retString = "";
+//    for ($i = 0; $i <= strlen($lowerStringToTranslate) - 1; $i++) {
+//        foreach ($morseCode as $humanChar => $morseChar) {
+//            if ($lowerStringToTranslate[$i] === $humanChar) {
+//                $retString .= $morseChar;
+//                $retString .= " ";
+//            } else {
+//                $retString .= " ";
+//            }
+//        }
+//    }
+//
+//    return $retString;
+//}
 
 // slow, but work fine. 
 function translateHumanToMorse($stringToTranslate, array $morseCode) {
 
     if (!is_string($stringToTranslate) || !is_array($morseCode) 
-            || strlen($stringToTranslate) > 10000) {
+            || strlen($stringToTranslate) > 9500) {
         return "";
     }
 
@@ -54,7 +54,7 @@ function translateHumanToMorse($stringToTranslate, array $morseCode) {
 function translateMorseToHuman($stringToTranslate, array $morseCode) {
 
     if (!is_string($stringToTranslate) || !is_array($morseCode) 
-            || strlen($stringToTranslate) > 10000) {
+            || strlen($stringToTranslate) > 9500) {
         return "";
     }
 

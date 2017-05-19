@@ -1,11 +1,26 @@
+body {
+    background-image: url("../img/diagonal_waves.png");
+}
+
 #divContainer {
     font-family: 'DejaVu Serif', 'Liberation Serif';  
     margin:0;
     padding:0;
-    height:100%;
+    clear: both;
 }
 
 .ulMenu li {
     list-style-type: none;
     display: inline;
 }
+
+#divMenu {
+    text-align: center;
+}
+
+#divFooter {
+    bottom: 0;
+    margin: 5px;
+    text-align: center;
+}
+
