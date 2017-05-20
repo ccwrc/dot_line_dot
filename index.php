@@ -43,8 +43,8 @@ if (!isset($_SESSION['language'])) {
         <meta name="keywords" content="ccwrc morse code translator" />
         <meta name="author" content="ccwrc">
         <link rel="stylesheet" href="css/style.css" type="text/css" />
-<!--    <script src="js/jquery-3.1.1.min.js"></script>
-        <script src="js/app.js"></script>	-->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/app.js"></script>	
     </head>
     <body>    
         <div id="divContainer">
