@@ -1,8 +1,9 @@
 body {
-    background-image: url("../img/diagonal_waves.png");
+/*    background-image: url("../img/diagonal_waves.png");*/
     margin:0;
     padding:0;
     height:100%;
+    background-color: #f2f2f2;
 }
 
 #divContainer {
@@ -15,8 +16,22 @@ body {
 
 .ulMenu li {
     list-style-type: none;
-    display: inline;
+    display: inline-block;
     text-align: center;
+}
+
+.ulMenu {
+    line-height: 80px;
+    display: inline-block;
+}
+
+.menuButton {
+    margin: auto 5px auto 5px;
+}
+
+.menuButton a {
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 #divMenu {
@@ -24,7 +39,7 @@ body {
     background-image: url("../img/background.png");
     width: 1000px; 
     min-height:120px;
-    margin: 5px;
+    margin: 5px 0px 5px 0px;
     border-radius: 7px;
     text-align: center;
     color: white;
@@ -36,7 +51,7 @@ body {
 
 #divFooter {
     bottom: 0;
-    margin: 5px;
+    margin: 5px 0px auto 0px;
     position: fixed; 
     text-align: center;
     background-image: url("../img/background.png");

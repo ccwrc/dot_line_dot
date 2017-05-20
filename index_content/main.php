@@ -1,6 +1,7 @@
 
 <div id="divContent">
 
+    <br/>
     <h3><?= $textTranslate[$language]['enterTheTextToBeTranslatedIntoMorseCode'] ?></h3>
 
     <form action="#" method="POST">
@@ -9,6 +10,7 @@
         <input type="submit" value="<?= $textTranslate[$language]['translate'] ?>"/>
     </form>
 
+    <br/>
     <h3><?= $textTranslate[$language]['orTranslateMorseCode'] ?></h3>
 
     <form action="#" method="POST">
