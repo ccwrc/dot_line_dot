@@ -1,31 +1,51 @@
 body {
     background-image: url("../img/diagonal_waves.png");
+    margin:0;
+    padding:0;
+    height:100%;
 }
 
 #divContainer {
     font-family: 'DejaVu Serif', 'Liberation Serif';  
-    margin:0;
-    padding:0;
-    clear: both;
+    min-height:100%;
+    position:relative;
+    width: 1000px; 
+    margin: 0 auto;
 }
 
 .ulMenu li {
     list-style-type: none;
     display: inline;
+    text-align: center;
 }
 
 #divMenu {
     text-align: center;
+    background-image: url("../img/background.png");
+    width: 1000px; 
+    min-height:120px;
+    margin: 5px;
+    border-radius: 7px;
+    text-align: center;
+    color: white;
 }
 
 #divContent {
-    
+    text-align: center;
 }
 
 #divFooter {
     bottom: 0;
     margin: 5px;
+    position: fixed; 
     text-align: center;
+    background-image: url("../img/background.png");
+    width: 1000px; 
+    min-height:120px;
+    margin: 5px;
+    border-radius: 7px;
+    text-align: center;
+    color: white;
 }
 
 

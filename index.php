@@ -74,13 +74,13 @@ if (!isset($_SESSION['language'])) {
             }
             ?>
 
-            <div id="divFooter">
-                <ul class="ulMenu">
+            <div id="divFooter"> 
+                <ul class="ulMenu"> 
                     <li><a href="index.php?load_page=main"><?=$textTranslate[$language]['translator']?></a></li>
                     <li><a href="index.php?load_page=contact"><?=$textTranslate[$language]['contact']?></a></li>
                     <li><a href="index.php?load_page=sources"><?=$textTranslate[$language]['sources']?></a></li>
                     <li><a href="https://github.com/ccwrc" target="_blank"><?=$textTranslate[$language]['author']?></a></li>
-                </ul>
+                </ul> 
             </div>
 
         </div>
