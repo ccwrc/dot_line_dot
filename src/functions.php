@@ -1,11 +1,13 @@
 <?php
 
+define('CHAR_LIMIT', 4500);
 require_once 'translate.php';
 
 // slow, but work fine. 
 function translateHumanToMorse($stringToTranslate, array $morseCode) {
 
-    if (!is_string($stringToTranslate) || !is_array($morseCode) || strlen($stringToTranslate) > 9500) {
+    if (!is_string($stringToTranslate) || !is_array($morseCode) 
+            || strlen($stringToTranslate) > CHAR_LIMIT) {
         return "";
     }
 
@@ -26,9 +28,11 @@ function translateHumanToMorse($stringToTranslate, array $morseCode) {
     return $retString;
 }
 
+
 function translateMorseToHuman($stringToTranslate, array $morseCode) {
 
-    if (!is_string($stringToTranslate) || !is_array($morseCode) || strlen($stringToTranslate) > 9500) {
+    if (!is_string($stringToTranslate) || !is_array($morseCode) 
+            || strlen($stringToTranslate) > CHAR_LIMIT) {
         return "";
     }
 

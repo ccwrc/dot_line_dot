@@ -9,6 +9,8 @@ $textTranslate = [
         "translate" => "translate",
         "orTranslateMorseCode" => "Or translate Morse code (-/./space)",
         "enterTheTextToBeTranslatedIntoMorseCode" => "Enter the text to be translated into Morse code",
+        "minimum" => "minimum",
+        "maximum" => "maximum",
     ],
     "pl" => [
         "sources" => "źródła",
@@ -18,6 +20,8 @@ $textTranslate = [
         "translate" => "przetłumacz",
         "orTranslateMorseCode" => "Lub przetłumacz kod Morse'a (-/./spacja)",
         "enterTheTextToBeTranslatedIntoMorseCode" => "Wprowadź tekst do tłumaczenia na kod Morse'a",
+        "minimum" => "minimum",
+        "maximum" => "maksimum",
     ],
     "esperanto" => [
         "sources" => "fonto",
@@ -27,6 +31,8 @@ $textTranslate = [
         "translate" => "traduki",
         "orTranslateMorseCode" => "Aŭ traduki kodo Morse (-/./spaco)",
         "enterTheTextToBeTranslatedIntoMorseCode" => "Enigu tekston traduki kodon Morsea",
+        "minimum" => "minimumajn",
+        "maximum" => "maksimuma",
     ],
     "fr" => [
         "sources" => "source",
@@ -36,6 +42,8 @@ $textTranslate = [
         "translate" => "traduire",
         "orTranslateMorseCode" => "Ou traduire le code Morse (-/./espace)",
         "enterTheTextToBeTranslatedIntoMorseCode" => "Entrez le texte à traduire le code Morsea",
+        "minimum" => "minimum",
+        "maximum" => "maximum",
     ]
 ];
 
