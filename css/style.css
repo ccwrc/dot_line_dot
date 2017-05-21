@@ -11,6 +11,7 @@ body {
     position:relative;
     width: 1000px; 
     margin: 0 auto;
+        
 }
 
 .ulMenu li {
@@ -42,6 +43,7 @@ body {
     margin: 5px 0px 5px 0px;
     border-radius: 5px;
     color: white;
+    box-shadow: 2px 4px 10px #336699;
 }
 
 #divContent {
@@ -58,6 +60,7 @@ body {
     margin: auto auto 5px auto;
     border-radius: 5px;
     color: white;
+    box-shadow: 2px 4px 10px #336699;
 }
 
 

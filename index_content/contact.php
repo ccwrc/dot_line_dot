@@ -1,7 +1,68 @@
+<?php
+$mailerInfoMessage = "";
+
+if (($_SERVER["REQUEST_METHOD"] === "POST") 
+        && filter_var($_POST["mailAddress"], FILTER_VALIDATE_EMAIL) 
+        && strlen($_POST["message"]) > 1   && strlen($_POST["message"]) <= CHAR_LIMIT) {
+
+    require_once 'vendor/autoload.php';
+    $mailer = new PHPMailer();
+
+    // config
+    $mailer->isSMTP();
+    $mailer->Host = "smtp.gmail.com";
+    $mailer->SMTPAuth = true;
+    $mailer->Username = "ccwrctestcc@gmail.com";
+    $mailer->Password = "tajnehaslo"; // please do not change :)
+    $mailer->SMTPSecure = "tls";
+    $mailer->Port = 587;
+
+    // sending
+    $mailer->CharSet = "UTF-8";
+    $mailer->setFrom($_POST["mailAddress"]);
+    $mailer->addAddress("ccwrcltd@gmail.elo", "Funky Koval");
+    $mailer->addReplyTo($_POST["mailAddress"]);
+    $mailer->Subject = "Mail from morse code site";
+    $mailer->Body = htmlentities(trim($_POST["message"]), ENT_QUOTES, "UTF-8");
+
+    if (!$mailer->send()) {
+        $mailerInfoMessage = $textTranslate[$language]['errorSendingMessage'];
+    } else {
+        $mailerInfoMessage = $textTranslate[$language]['messageSent'];
+    }
+} else if (($_SERVER["REQUEST_METHOD"] === "POST") && isset($_POST["mailAddress"]) 
+        && isset($_POST["message"])) {
+    $mailerInfoMessage = $textTranslate[$language]['enterAllFieldsCorrectly'];
+}
+?>
+
+
+
+
 
 <div id="divContent">
 
-    <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+    <br/>
+    <h3><?= $textTranslate[$language]['haveYouNoticedSendThemToMe'] ?></h3>
+    
+    <form method="POST" action="">
+        <br/>
+        <label>
+            <?= $textTranslate[$language]['enterYourEmail'] ?>:<br/>
+            <input type="email" name="mailAddress" required="required" size="33"/>
+        </label>
+
+        <br/><br>
+        <label>
+            <?= $textTranslate[$language]['enterAmessage'] ?>:<br/>
+            <textarea name="message" cols="50" rows="5" required="required"></textarea>
+        </label>
+
+        <br/>
+        <input type="submit" value="<?= $textTranslate[$language]['send'] ?>"/>
+    </form>
+    
+    <p><?=$mailerInfoMessage?></p>
 
 </div>
 

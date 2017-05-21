@@ -52,10 +52,10 @@ if (!isset($_SESSION['language'])) {
 
             <div id="divMenu">
                 <ul class="ulMenu">
-                    <li class="menuButton"><img src="img/pl.png"/> <a href="index.php?translate_to=pl">Polski</a></li>
-                    <li class="menuButton"><img src="img/en.png"/> <a href="index.php?translate_to=en">English</a></li>
-                    <li class="menuButton"><img src="img/fr.png"/> <a href="index.php?translate_to=fr">Français</a></li>
-                    <li class="menuButton"><img src="img/es.png"/> <a href="index.php?translate_to=esperanto">Esperanto</a></li>
+                    <li class="menuButton"><img src="img/pl.png"/> <a href="index.php?translate_to=pl" title="<?=$textTranslate[$language]['changeLanguageAndReturnToMainPage']?>">Polski</a></li>
+                    <li class="menuButton"><img src="img/en.png"/> <a href="index.php?translate_to=en" title="<?=$textTranslate[$language]['changeLanguageAndReturnToMainPage']?>">English</a></li>
+                    <li class="menuButton"><img src="img/fr.png"/> <a href="index.php?translate_to=fr" title="<?=$textTranslate[$language]['changeLanguageAndReturnToMainPage']?>">Français</a></li>
+                    <li class="menuButton"><img src="img/es.png"/> <a href="index.php?translate_to=esperanto" title="<?=$textTranslate[$language]['changeLanguageAndReturnToMainPage']?>">Esperanto</a></li>
                 </ul>
             </div>
 
@@ -80,8 +80,7 @@ if (!isset($_SESSION['language'])) {
                     <li class="menuButton"><a href="index.php?load_page=main"><?=$textTranslate[$language]['translator']?></a></li>
                     <li class="menuButton"><a href="index.php?load_page=contact"><?=$textTranslate[$language]['contact']?></a></li>
                     <li class="menuButton"><a href="index.php?load_page=sources"><?=$textTranslate[$language]['sources']?></a></li>
-                    <li class="menuButton"><a href="https://github.com/ccwrc" target="_blank" 
-                                           title="<?=$textTranslate[$language]['openInNewWindow']?>"><?=$textTranslate[$language]['author']?></a></li>
+                    <li class="menuButton"><a href="https://github.com/ccwrc" target="_blank" title="<?=$textTranslate[$language]['openInNewWindow']?>"><?=$textTranslate[$language]['author']?></a></li>
                 </ul> 
             </div>
 
