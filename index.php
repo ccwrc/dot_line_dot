@@ -38,9 +38,10 @@ if (!isset($_SESSION['language'])) {
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <META http-equiv="Content-Language" content="pl,en,fr,eo">
         <title> Morsem go! </title>
         <meta name="description" content="morse code translator" />
-        <meta name="keywords" content="ccwrc morse code translator" />
+        <meta name="keywords" content="ccwrc morse code translator tłumacz alfabetu morsa" />
         <meta name="author" content="ccwrc">
         <link rel="stylesheet" href="css/style.css" type="text/css" />
         <script src="js/jquery-3.2.1.min.js"></script>
@@ -79,7 +80,8 @@ if (!isset($_SESSION['language'])) {
                     <li class="menuButton"><a href="index.php?load_page=main"><?=$textTranslate[$language]['translator']?></a></li>
                     <li class="menuButton"><a href="index.php?load_page=contact"><?=$textTranslate[$language]['contact']?></a></li>
                     <li class="menuButton"><a href="index.php?load_page=sources"><?=$textTranslate[$language]['sources']?></a></li>
-                    <li class="menuButton"><a href="https://github.com/ccwrc" target="_blank"><?=$textTranslate[$language]['author']?></a></li>
+                    <li class="menuButton"><a href="https://github.com/ccwrc" target="_blank" 
+                                           title="<?=$textTranslate[$language]['openInNewWindow']?>"><?=$textTranslate[$language]['author']?></a></li>
                 </ul> 
             </div>
 

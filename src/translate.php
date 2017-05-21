@@ -11,6 +11,10 @@ $textTranslate = [
         "enterTheTextToBeTranslatedIntoMorseCode" => "Enter the text to be translated into Morse code",
         "minimum" => "minimum",
         "maximum" => "maximum",
+        "openInNewWindow" => "open in a new window",
+        "wikipedia" => "Wikipedia",
+        "recommendation1677" => "Recommendation ITU-R M.1677-1",
+        "publicDomainPictures" => "Public domain pictures",
     ],
     "pl" => [
         "sources" => "źródła",
@@ -22,6 +26,10 @@ $textTranslate = [
         "enterTheTextToBeTranslatedIntoMorseCode" => "Wprowadź tekst do tłumaczenia na kod Morse'a",
         "minimum" => "minimum",
         "maximum" => "maksimum",
+        "openInNewWindow" => "otworzy się w nowym oknie",
+        "wikipedia" => "Wikipedia",
+        "recommendation1677" => "Zalecenie ITU-R M.1677-1",
+        "publicDomainPictures" => "Obrazy z domeny publicznej",
     ],
     "esperanto" => [
         "sources" => "fonto",
@@ -33,6 +41,10 @@ $textTranslate = [
         "enterTheTextToBeTranslatedIntoMorseCode" => "Enigu tekston traduki kodon Morsea",
         "minimum" => "minimumajn",
         "maximum" => "maksimuma",
+        "openInNewWindow" => "en nova fenestro",
+        "wikipedia" => "Vikipedio",
+        "recommendation1677" => "Rekomendo ITU-R M.1677-1",
+        "publicDomainPictures" => "Publika havaĵo bildoj",
     ],
     "fr" => [
         "sources" => "source",
@@ -44,6 +56,10 @@ $textTranslate = [
         "enterTheTextToBeTranslatedIntoMorseCode" => "Entrez le texte à traduire le code Morsea",
         "minimum" => "minimum",
         "maximum" => "maximum",
+        "openInNewWindow" => "ouvre dans une nouvelle fenêtre",
+        "wikipedia" => "Wikipedia",
+        "recommendation1677" => "Recommandation ITU-R M.1677-1",
+        "publicDomainPictures" => "Images de domaine public",
     ]
 ];
 
