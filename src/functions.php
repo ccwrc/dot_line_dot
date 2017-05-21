@@ -7,7 +7,7 @@ require_once 'translate.php';
 function translateHumanToMorse($stringToTranslate, array $morseCode) {
 
     if (!is_string($stringToTranslate) || !is_array($morseCode) 
-            || strlen($stringToTranslate) > CHAR_LIMIT) {
+            || strlen($stringToTranslate) > CHAR_LIMIT * 2) { // *2 for multibyte string
         return "";
     }
 
@@ -32,7 +32,7 @@ function translateHumanToMorse($stringToTranslate, array $morseCode) {
 function translateMorseToHuman($stringToTranslate, array $morseCode) {
 
     if (!is_string($stringToTranslate) || !is_array($morseCode) 
-            || strlen($stringToTranslate) > CHAR_LIMIT) {
+            || strlen($stringToTranslate) > CHAR_LIMIT * 2) {
         return "";
     }
 
