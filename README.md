@@ -1,5 +1,13 @@
 # dot_line_dot
 
+**functionality**    
+        - 4 language versions, :earth_americas:    
+        - translation from alphanumeric characters to morse code,     
+        - and translation from morse code to alphanumeric characters,       
+        - simple messaging,             
+        - simple captcha,     
+        - flexible character counter,      
+        - switch-based URL routing.     
 
 #
 work screen: 
