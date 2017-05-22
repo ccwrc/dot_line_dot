@@ -23,6 +23,7 @@ $textTranslate = [
         "messageSent" => "Message sent",
         "errorSendingMessage" => "Error sending message",
         "enterAllFieldsCorrectly" => "Enter all fields correctly",
+        "write2and3charactersFromThePicture" => "Please write 2 and 3 characters from the picture",
     ],
     "pl" => [
         "sources" => "źródła",
@@ -45,7 +46,8 @@ $textTranslate = [
         "changeLanguageAndReturnToMainPage" => "zmiana języka i powrót do strony głównej",
         "messageSent" => "Wiadomość wysłana",
         "errorSendingMessage" => "Błąd wysyłania wiadomości",
-        "enterAllFieldsCorrectly" => "Wprowadź poprawnie wszystkie pola",
+        "enterAllFieldsCorrectly" => "Wypełnij poprawnie wszystkie pola",
+        "write2and3charactersFromThePicture" => "Przepisz 2 i 3 znak z obrazka",
     ],
     "esperanto" => [
         "sources" => "fonto",
@@ -69,6 +71,7 @@ $textTranslate = [
         "messageSent" => "Mesaĝo sendita",
         "errorSendingMessage" => "Sendo erarmesaĝoj",
         "enterAllFieldsCorrectly" => "Enigu ĉiujn kampojn korekte",
+        "write2and3charactersFromThePicture" => "Rewrite 2 kaj 3 markon de la bildo",
     ],
     "fr" => [
         "sources" => "source",
@@ -92,6 +95,7 @@ $textTranslate = [
         "messageSent" => "Message envoyé",
         "errorSendingMessage" => "L'envoi de messages d'erreur",
         "enterAllFieldsCorrectly" => "Entrez tous les champs correctement",
+        "write2and3charactersFromThePicture" => "Récrire marque 2 et 3 de l'image",      
     ]
 ];
 
@@ -165,5 +169,5 @@ $morseCode = [
     "[understood]" => "...-.", 
     "[error]" => "........", 
     "[starting signal]" => "-.-.-", 
-    "[start of work (VVV)]" => "...-...-...-", 
+    "[start of work (vvv)]" => "...-...-...-", 
 ];

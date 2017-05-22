@@ -63,5 +63,9 @@ body {
     box-shadow: 2px 4px 10px #336699;
 }
 
+.infoMessage {
+    color: blue;
+}
+
 
 

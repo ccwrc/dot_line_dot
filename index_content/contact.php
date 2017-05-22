@@ -3,7 +3,8 @@ $mailerInfoMessage = "";
 
 if (($_SERVER["REQUEST_METHOD"] === "POST") 
         && filter_var($_POST["mailAddress"], FILTER_VALIDATE_EMAIL) 
-        && strlen($_POST["message"]) > 1   && strlen($_POST["message"]) <= CHAR_LIMIT) {
+        && strlen($_POST["message"]) > 1 && strlen($_POST["message"]) <= CHAR_LIMIT 
+        && $_POST['captcha'] >= 23 && $_POST['captcha'] <= 75) {
 
     require_once 'vendor/autoload.php';
     $mailer = new PHPMailer();
@@ -36,15 +37,11 @@ if (($_SERVER["REQUEST_METHOD"] === "POST")
 }
 ?>
 
-
-
-
-
 <div id="divContent">
 
     <br/>
     <h3><?= $textTranslate[$language]['haveYouNoticedSendThemToMe'] ?></h3>
-    
+
     <form method="POST" action="">
         <br/>
         <label>
@@ -58,11 +55,18 @@ if (($_SERVER["REQUEST_METHOD"] === "POST")
             <textarea name="message" cols="50" rows="5" required="required"></textarea>
         </label>
 
+        <br/><br/>
+        <label>
+            <?= $textTranslate[$language]['write2and3charactersFromThePicture'] ?>:<br/>
+            <img src="img/captcha<?= rand(1, 5) ?>.png"/><br/>
+            <input type="text" name="captcha" size="33"/>
+        </label>
+
         <br/>
         <input type="submit" value="<?= $textTranslate[$language]['send'] ?>"/>
     </form>
-    
-    <p><?=$mailerInfoMessage?></p>
+
+    <p class="infoMessage"><?= $mailerInfoMessage ?></p>
 
 </div>
 
