@@ -52,7 +52,7 @@ if (($_SERVER["REQUEST_METHOD"] === "POST")
         <br/><br>
         <label>
             <?= $textTranslate[$language]['enterAmessage'] ?>:<br/>
-            <textarea name="message" cols="50" rows="5" required="required"></textarea>
+            <textarea name="message" cols="50" rows="5" required="required" data-max_char_input="<?=CHAR_LIMIT?>" id="inputContactMessage"></textarea>
         </label>
 
         <br/><br/>

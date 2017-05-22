@@ -26,7 +26,7 @@ $(document).ready(function () {
     };
 
     var idsForCounterArray = [
-        "#inputToMorse", "#inputToText"
+        "#inputToMorse", "#inputToText", "#inputContactMessage"
     ];
 
     for (var i = 0; i < idsForCounterArray.length; i++) {
