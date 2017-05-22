@@ -10,8 +10,7 @@ body {
     min-height:100%;
     position:relative;
     width: 1000px; 
-    margin: 0 auto;
-        
+    margin: auto;
 }
 
 .ulMenu li {
@@ -39,7 +38,7 @@ body {
     text-align: center;
     background-image: url("../img/background.png");
     width: 1000px; 
-    min-height:120px;
+    min-height: 120px;
     margin: 5px 0px 5px 0px;
     border-radius: 5px;
     color: white;
@@ -56,7 +55,7 @@ body {
     text-align: center;
     background-image: url("../img/background.png");
     width: 1000px; 
-    min-height:120px;
+    min-height: 120px;
     margin: auto auto 5px auto;
     border-radius: 5px;
     color: white;
@@ -67,5 +66,7 @@ body {
     color: blue;
 }
 
-
-
+.dispalyToBlockAndCenter {
+    display: block;
+    margin: auto;
+}

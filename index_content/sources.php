@@ -8,5 +8,4 @@
 
     <a href="http://www.publicdomainpictures.net/"><h3><?= $textTranslate[$language]['publicDomainPictures'] ?></h3></a>
 
-
 </div>
