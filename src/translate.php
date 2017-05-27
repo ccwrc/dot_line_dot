@@ -24,6 +24,9 @@ $textTranslate = [
         "errorSendingMessage" => "Error sending message",
         "enterAllFieldsCorrectly" => "Enter all fields correctly",
         "write2and3charactersFromThePicture" => "Please write 2 and 3 characters from the picture",
+        "shortManual" => "Short manual: ",
+        "charactersThatAreNotAllowedWillBeReplacedWithAspace" => "Characters that are not allowed will be replaced with a space. ",
+        "separateTheCharactersInTheMorseCodeForExample" => "Separate the characters in the Morse code, for example: -.-.&npsp;&npsp;-.-.&npsp;&npsp;.--&npsp;&npsp;.-.&npsp;&npsp;-.-. ",
     ],
     "pl" => [
         "sources" => "źródła",
@@ -48,6 +51,9 @@ $textTranslate = [
         "errorSendingMessage" => "Błąd wysyłania wiadomości",
         "enterAllFieldsCorrectly" => "Wypełnij poprawnie wszystkie pola",
         "write2and3charactersFromThePicture" => "Przepisz 2 i 3 znak z obrazka",
+        "shortManual" => "Krótka instrukcja: ",
+        "charactersThatAreNotAllowedWillBeReplacedWithAspace" => "Znaki niedozwolone zostaną zastąpione spacją. ",
+        "separateTheCharactersInTheMorseCodeForExample" => "Znaki w kodzie Morse'a rozdzielaj spacją, na przykład: -.-.&npsp;&npsp;-.-.&npsp;&npsp;.--&npsp;&npsp;.-.&npsp;&npsp;-.-. ",
     ],
     "esperanto" => [
         "sources" => "fonto",
@@ -72,6 +78,9 @@ $textTranslate = [
         "errorSendingMessage" => "Sendo erarmesaĝoj",
         "enterAllFieldsCorrectly" => "Enigu ĉiujn kampojn korekte",
         "write2and3charactersFromThePicture" => "Rewrite 2 kaj 3 markon de la bildo",
+        "shortManual" => "Mallonga manlibro: ",
+        "charactersThatAreNotAllowedWillBeReplacedWithAspace" => "Kontraŭleĝa karaktero estos anstataŭitaj de spaco. ",
+        "separateTheCharactersInTheMorseCodeForExample" => "Karakteroj en kodo morse apartigitaj per spaco, ekzemple: -.-.&npsp;&npsp;-.-.&npsp;&npsp;.--&npsp;&npsp;.-.&npsp;&npsp;-.-. ",
     ],
     "fr" => [
         "sources" => "source",
@@ -95,7 +104,10 @@ $textTranslate = [
         "messageSent" => "Message envoyé",
         "errorSendingMessage" => "L'envoi de messages d'erreur",
         "enterAllFieldsCorrectly" => "Entrez tous les champs correctement",
-        "write2and3charactersFromThePicture" => "Récrire marque 2 et 3 de l'image",      
+        "write2and3charactersFromThePicture" => "Récrire marque 2 et 3 de l'image",   
+        "shortManual" => "Manuel court: ",
+        "charactersThatAreNotAllowedWillBeReplacedWithAspace" => "Caractère illégal sera remplacé par un espace. ",
+        "separateTheCharactersInTheMorseCodeForExample" => "Caractères en code morse séparés par un espace, par exemple: -.-.&npsp;&npsp;-.-.&npsp;&npsp;.--&npsp;&npsp;.-.&npsp;&npsp;-.-. ",
     ]
 ];
 
