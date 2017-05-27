@@ -171,3 +171,5 @@ $morseCode = [
     "[starting signal]" => "-.-.-", 
     "[start of work (vvv)]" => "...-...-...-", 
 ];
+
+// test sample: 1234567890ąęół.,'\_:;?!-+/()=@$
