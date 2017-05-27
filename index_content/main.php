@@ -21,6 +21,9 @@
     <br/>
 
     <?= $translatedText ?>
+    <p><?= $textTranslate[$language]['shortManual'] ?></p>
+    <p><?= $textTranslate[$language]['charactersThatAreNotAllowedWillBeReplacedWithAspace'] ?>
+       <?= $textTranslate[$language]['separateTheCharactersInTheMorseCodeForExample'] ?></p>
 
     <!-- br for expose a long translation -->
     <br/><br/><br/><br/><br/><br/><br/><br/>

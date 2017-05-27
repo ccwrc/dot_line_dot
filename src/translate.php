@@ -26,7 +26,7 @@ $textTranslate = [
         "write2and3charactersFromThePicture" => "Please write 2 and 3 characters from the picture",
         "shortManual" => "Short manual: ",
         "charactersThatAreNotAllowedWillBeReplacedWithAspace" => "Characters that are not allowed will be replaced with a space. ",
-        "separateTheCharactersInTheMorseCodeForExample" => "Separate the characters in the Morse code, for example: -.-.&npsp;&npsp;-.-.&npsp;&npsp;.--&npsp;&npsp;.-.&npsp;&npsp;-.-. ",
+        "separateTheCharactersInTheMorseCodeForExample" => "Separate the characters in the Morse code, for example: -.-.&nbsp;&nbsp;-.-.&nbsp;&nbsp;.--&nbsp;&nbsp;.-.&nbsp;&nbsp;-.-. ",
     ],
     "pl" => [
         "sources" => "źródła",
@@ -53,7 +53,7 @@ $textTranslate = [
         "write2and3charactersFromThePicture" => "Przepisz 2 i 3 znak z obrazka",
         "shortManual" => "Krótka instrukcja: ",
         "charactersThatAreNotAllowedWillBeReplacedWithAspace" => "Znaki niedozwolone zostaną zastąpione spacją. ",
-        "separateTheCharactersInTheMorseCodeForExample" => "Znaki w kodzie Morse'a rozdzielaj spacją, na przykład: -.-.&npsp;&npsp;-.-.&npsp;&npsp;.--&npsp;&npsp;.-.&npsp;&npsp;-.-. ",
+        "separateTheCharactersInTheMorseCodeForExample" => "Znaki w kodzie Morse'a rozdzielaj spacją, na przykład: -.-.&nbsp;&nbsp;-.-.&nbsp;&nbsp;.--&nbsp;&nbsp;.-.&nbsp;&nbsp;-.-. ",
     ],
     "esperanto" => [
         "sources" => "fonto",
@@ -80,7 +80,7 @@ $textTranslate = [
         "write2and3charactersFromThePicture" => "Rewrite 2 kaj 3 markon de la bildo",
         "shortManual" => "Mallonga manlibro: ",
         "charactersThatAreNotAllowedWillBeReplacedWithAspace" => "Kontraŭleĝa karaktero estos anstataŭitaj de spaco. ",
-        "separateTheCharactersInTheMorseCodeForExample" => "Karakteroj en kodo morse apartigitaj per spaco, ekzemple: -.-.&npsp;&npsp;-.-.&npsp;&npsp;.--&npsp;&npsp;.-.&npsp;&npsp;-.-. ",
+        "separateTheCharactersInTheMorseCodeForExample" => "Karakteroj en kodo morse apartigitaj per spaco, ekzemple: -.-.&nbsp;&nbsp;-.-.&nbsp;&nbsp;.--&nbsp;&nbsp;.-.&nbsp;&nbsp;-.-. ",
     ],
     "fr" => [
         "sources" => "source",
@@ -107,7 +107,7 @@ $textTranslate = [
         "write2and3charactersFromThePicture" => "Récrire marque 2 et 3 de l'image",   
         "shortManual" => "Manuel court: ",
         "charactersThatAreNotAllowedWillBeReplacedWithAspace" => "Caractère illégal sera remplacé par un espace. ",
-        "separateTheCharactersInTheMorseCodeForExample" => "Caractères en code morse séparés par un espace, par exemple: -.-.&npsp;&npsp;-.-.&npsp;&npsp;.--&npsp;&npsp;.-.&npsp;&npsp;-.-. ",
+        "separateTheCharactersInTheMorseCodeForExample" => "Caractères en code morse séparés par un espace, par exemple: -.-.&nbsp;&nbsp;-.-.&nbsp;&nbsp;.--&nbsp;&nbsp;.-.&nbsp;&nbsp;-.-. ",
     ]
 ];
 
