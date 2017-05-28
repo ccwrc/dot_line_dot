@@ -12,4 +12,4 @@ http://morsem.pl/
 
 #
 work screen: 
-![Alt text](https://images85.fotosik.pl/178/5dc3683bd9738c1c.png "how_about_lerning_esperanto")
+![Alt text](https://images85.fotosik.pl/190/1e555e384392644c.png "how_about_lerning_esperanto")
