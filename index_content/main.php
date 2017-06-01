@@ -20,7 +20,7 @@
     </form>
     <br/>
 
-    <?= $translatedText ?>
+    <b><?= $translatedText ?></b>
     <br/>
     <p class="infoMessage"><?= $textTranslate[$language]['shortManual'] ?></p>
     <p class="infoMessage"><?= $textTranslate[$language]['charactersThatAreNotAllowedWillBeReplacedWithAspace'] ?>
