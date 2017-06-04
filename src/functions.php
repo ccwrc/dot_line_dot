@@ -1,6 +1,6 @@
 <?php
 
-define('CHAR_LIMIT', 4500);
+define('CHAR_LIMIT', 9500);
 require_once 'translate.php';
 
 function translateHumanToMorse($stringToTranslate, array $morseCode) {
