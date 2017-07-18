@@ -34,7 +34,8 @@ function translateMorseToHuman($stringToTranslate, array $morseCode) {
     $flipMorseCode = array_flip($morseCode);
     $arrayToTranslate = explode(" ", $stringToTranslate);
     $retString = "";
-    for ($i = 0; $i <= count($arrayToTranslate) - 1; $i++) {
+    $countArrayToTranslate = count($arrayToTranslate) - 1;
+    for ($i = 0; $i <= $countArrayToTranslate; $i++) {
         if (array_key_exists($arrayToTranslate[$i], $flipMorseCode)) {
             $retString .= $flipMorseCode[$arrayToTranslate[$i]];
         }
